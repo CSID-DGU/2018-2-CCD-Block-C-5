@@ -1,4 +1,6 @@
 public class ttest {
 
-    print("hello word")
+    public static void main{
+
+    }
 }
