@@ -1,3 +1,4 @@
 ECONOMIC=5000
 NORMAL=10000
 PRIORITY=50000
+//testnet 수수료 부분 수정해보기
