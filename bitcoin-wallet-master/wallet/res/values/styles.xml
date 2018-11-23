@@ -4,7 +4,8 @@
     <style name="My.Theme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/My.Widget.ActionBar</item>
         <item name="android:actionModeStyle">@style/My.Widget.ActionMode</item>
-        <item name="android:actionMenuTextColor">@color/fg_network</item>
+        <item name="android:actionMenuTextColor">@color/yiseul_ligthpink</item>
+        <!--<item name="android:actionMenuTextColor">@color/fg_network</item>-->
         <item name="android:actionButtonStyle">@style/My.Widget.ActionButton</item>
         <item name="android:actionOverflowButtonStyle">@style/My.Widget.ActionButton.Overflow</item>
         <item name="android:textViewStyle">@style/My.Widget.TextView</item>
@@ -42,11 +43,13 @@
     </style>
 
     <style name="My.TextAppearance.Widget.ActionBar.Title" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/fg_network_significant</item>
-        <item name="android:textStyle">bold</item>
+        <!--액션바 타이틀 글씨 설정-->
+        <!--<item name="android:textColor">@color/fg_network_significant</item>-->
+        <item name="android:textColor">@color/fg_significant</item>
+        <!--<item name="android:textStyle">bold</item>-->
         <item name="android:shadowColor">@android:color/black</item>
-        <item name="android:shadowRadius">1</item>
-    </style>
+        <item name="android:shadowRadius">3</item>
+    </style>fg_significant
 
     <style name="My.TextAppearance.Widget.ActionBar.Subtitle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle">
         <item name="android:textColor">@color/fg_network_insignificant</item>
@@ -78,7 +81,9 @@
     </style>
 
     <style name="My.TextAppearance.Widget.ActionMode.Subtitle" parent="@android:style/TextAppearance.Holo.Widget.ActionMode.Subtitle">
-        <item name="android:textColor">@android:color/white</item>
+        <!--<item name="android:textColor">@android:color/white</item>-->
+        <item name="android:textColor">@color/colortest_pink</item>
+
         <item name="android:textStyle">normal</item>
     </style>
 

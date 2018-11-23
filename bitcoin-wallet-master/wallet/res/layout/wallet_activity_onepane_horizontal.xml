@@ -39,7 +39,7 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/bg_panel"
+                android:background="@color/yiseul_white"
                 android:elevation="3dp"
                 android:tag="levitate" >
 

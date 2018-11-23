@@ -4,6 +4,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical" >
+    <!--QR코드 클릭시 화면-->
 
     <ImageView
         android:id="@+id/wallet_address_dialog_image"

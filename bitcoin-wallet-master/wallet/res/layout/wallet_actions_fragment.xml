@@ -12,11 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:drawableLeft="@drawable/ic_send_flipped_white_24dp"
         android:singleLine="true"
         android:text="@string/button_request_coins"
         android:textAllCaps="true"
-        android:textColor="@color/fg_network"
+        android:textColor="@color/yiseul_black"
         android:textSize="@dimen/font_size_tiny"
         android:textStyle="bold" />
 
@@ -31,11 +30,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:drawableRight="@drawable/ic_send_white_24dp"
         android:singleLine="true"
         android:text="@string/button_send_coins"
         android:textAllCaps="true"
-        android:textColor="@color/fg_network"
+        android:textColor="@color/yiseul_black"
         android:textSize="@dimen/font_size_tiny"
         android:textStyle="bold" />
 

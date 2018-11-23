@@ -73,8 +73,8 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/appwidget_button_center"
-        android:contentDescription="@string/button_request_coins"
-        android:src="@drawable/ic_send_flipped_white_24dp" />
+        android:contentDescription="@string/button_request_coins" />
+        <!--android:src="@drawable/ic_send_flipped_white_24dp" />-->
 
     <ImageButton
         android:id="@+id/widget_button_send"
@@ -82,8 +82,8 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/appwidget_button_center"
-        android:contentDescription="@string/button_send_coins"
-        android:src="@drawable/ic_send_white_24dp" />
+        android:contentDescription="@string/button_send_coins" />
+        <!--android:src="@drawable/ic_send_white_24dp" />-->
 
     <ImageButton
         android:id="@+id/widget_button_send_qr"
