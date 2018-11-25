@@ -103,7 +103,10 @@ public class DynamicFeeLiveData extends LiveData<Map<FeeCategory, Coin>> {
             final Map<FeeCategory, Coin> dynamicFees = parseFees(new FileInputStream(dynamicFeesFile));
             for (final FeeCategory category : FeeCategory.values()) {
                 final Coin staticFee = staticFees.get(category);
+
                 final Coin dynamicFee = dynamicFees.get(category);
+
+
                 if (dynamicFee == null) {
                     dynamicFees.put(category, staticFee);
                     log.warn("Dynamic fee category missing, using static: category {}, {}/kB", category,
