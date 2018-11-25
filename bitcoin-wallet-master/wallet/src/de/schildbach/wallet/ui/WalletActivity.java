@@ -68,7 +68,7 @@ import android.view.animation.DecelerateInterpolator;
 /**
  * @author Andreas Schildbach
  */
-public final class WalletActivity extends AbstractWalletActivity {
+public class WalletActivity extends AbstractWalletActivity {
     private WalletApplication application;
     private Handler handler = new Handler();
 

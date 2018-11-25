@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 로그인화면 -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:paddingTop="10px">
+    <TableRow>
+        <TextView
+            android:text="login"
+            android:padding="10px"
+            />
+        <EditText android:id="@+id/entryId"
+            android:layout_span="3"
+            android:padding="10px"
+            android:autoText="false"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="@string/pwd"
+            android:padding="10px"
+            />
+        <EditText android:id="@+id/pwd"
+            android:layout_span="3"
+            android:padding="10px"
+            android:autoText="false"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_span="2"
+            />
+        <Button android:id="@+id/findId"
+            android:text="@string/ok"
+            />
+        <Button android:id="@+id/register"
+            android:text="@string/cancel"
+            />
+
+    </TableRow>
+
+</TableLayout>
