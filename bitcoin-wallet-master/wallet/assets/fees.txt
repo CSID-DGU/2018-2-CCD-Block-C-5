@@ -1,5 +1,0 @@
-# fee rates in satoshis per 1000 bytes of tx data
-ECONOMIC=0
-NORMAL=0
-PRIORITY=0
-FREE =0
