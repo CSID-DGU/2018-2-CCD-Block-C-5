@@ -362,12 +362,7 @@
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."</string>
-    <string name="hello">Hello World, LoginExamAct!</string>
-    <string name="app_name">LoginExam</string>
-    <string name="login">아이디:</string>
-    <string name="ok">검색</string>
-    <string name="cancel">저장</string>
-    <string name="pwd">비밀번호:</string>
+
 
 
 </resources>

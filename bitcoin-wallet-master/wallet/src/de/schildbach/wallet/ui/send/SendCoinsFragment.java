@@ -656,7 +656,7 @@ public final class SendCoinsFragment extends Fragment {
             return true;
 
         case R.id.send_coins_options_fee_category_economic:
-            handleFeeCategory(FeeCategory.ECONOMIC);
+            handleFeeCategory(FeeCategory.FREE);
             return true;
         case R.id.send_coins_options_fee_category_normal:
             handleFeeCategory(FeeCategory.NORMAL);
