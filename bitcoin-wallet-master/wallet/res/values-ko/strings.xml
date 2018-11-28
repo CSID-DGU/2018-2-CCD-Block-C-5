@@ -28,7 +28,7 @@
   <string name="wallet_transactions_fragment_empty_text_received">상품권 결제 내역이 없습니다.</string>
   <string name="wallet_transactions_fragment_empty_text_sent">아직 BLOCK C를 보낸 내역이 없습니다.</string>
   <!--<string name="wallet_transactions_fragment_empty_text_howto">BLOCK C 획득 방법\n\n1. 로컬 통화로 BLOCK C 구매\n2. 상품이나 서비스 판매\n3. 용역 대가로 획득</string>-->
-  <string name="wallet_transactions_fragment_empty_text_howto">Block C 상품권 구매 방법\n\n1. 으아아아 \n2. WWW.BLOCKC.COM 에서 구매\n3. 선물받기 </string>
+  <string name="wallet_transactions_fragment_empty_text_howto">Block C 상품권 구매 방법 </string>
   <string name="wallet_transactions_row_warning_backup">첫거래를 축하드립니다. 분실에 대비하기 위해 &lt;u&gt;BLOCK C 지갑 백업&lt;/u&gt;이 가능합니다. </string>
   <!--<string name="wallet_transactions_row_warning_backup">축하드립니다. 첫번째 결제를 받았습니다. 분실에 대비하기 위해 &lt;u&gt;전자 지갑 백업&lt;/u&gt;을 수행하신 적이 있나요? </string>-->
   <string name="wallet_transactions_row_warning_storage_encryption">힌트: 지갑의 안전을 위해 &lt;u&gt;기기 암호화&lt;u&gt;를 사용해 보세요. 이것은 다른 앱의 자료도 보호해 줍니다.</string>
