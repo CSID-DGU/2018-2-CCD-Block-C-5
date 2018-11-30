@@ -100,7 +100,7 @@ public final class CurrencyTextView extends TextView {
     protected void onFinishInflate() {
         super.onFinishInflate();
 
-        setPrefixColor(getResources().getColor(R.color.fg_less_significant));
+        setPrefixColor(getResources().getColor(R.color.yiseul_white));
         setPrefixScaleX(1);
         setInsignificantRelativeSize(0.85f);
         setSingleLine();
