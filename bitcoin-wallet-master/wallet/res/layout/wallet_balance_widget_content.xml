@@ -44,7 +44,7 @@
             <TextView
                 android:id="@+id/widget_wallet_balance_btc"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="4sp"
                 android:ellipsize="none"
                 android:fadingEdge="horizontal"
@@ -63,8 +63,9 @@
             android:fadingEdge="horizontal"
             android:fadingEdgeLength="12dp"
             android:singleLine="true"
-            android:textColor="@color/fg_network_insignificant"
-            android:textSize="@dimen/font_size_normal" />
+            android:textColor="@color/yiseul_white"
+            android:textSize="@dimen/font_size_normal"
+            android:visibility="invisible" />
     </LinearLayout>
 
     <ImageButton
@@ -76,14 +77,7 @@
         android:contentDescription="@string/button_request_coins" />
         <!--android:src="@drawable/ic_send_flipped_white_24dp" />-->
 
-    <ImageButton
-        android:id="@+id/widget_button_send"
-        android:layout_width="0px"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="@drawable/appwidget_button_center"
-        android:contentDescription="@string/button_send_coins" />
-        <!--android:src="@drawable/ic_send_white_24dp" />-->
+    <!--android:src="@drawable/ic_send_white_24dp" />-->
 
     <ImageButton
         android:id="@+id/widget_button_send_qr"
@@ -93,5 +87,13 @@
         android:background="@drawable/appwidget_button_right"
         android:contentDescription="@string/button_scan"
         android:src="@drawable/ic_photo_camera_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/widget_button_send"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/appwidget_button_center"
+        android:contentDescription="@string/button_send_coins" />
 
 </LinearLayout>

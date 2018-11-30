@@ -27,40 +27,49 @@
         android:showAsAction="ifRoom|withText"
         android:title="@string/address_book_activity_title"/>
     <item
+        android:checkable="false"
+        android:enabled="false"
         android:showAsAction="never"
-        android:title="@string/wallet_options_safety_menu">
+        android:title="@string/wallet_options_safety_menu"
+        android:visible="false">
         <menu>
             <item
                 android:id="@+id/wallet_options_safety"
+                android:checkable="true"
                 android:showAsAction="never"
-                android:title="@string/wallet_options_safety"/>
+                android:title="@string/wallet_options_safety" />
             <item
                 android:id="@+id/wallet_options_technical_notes"
                 android:showAsAction="never"
-                android:title="@string/wallet_options_technical_notes_title"/>
+                android:title="@string/wallet_options_technical_notes_title" />
             <item
                 android:id="@+id/wallet_options_backup_wallet"
                 android:showAsAction="never"
-                android:title="@string/export_keys_dialog_title"/>
+                android:title="@string/export_keys_dialog_title" />
             <item
                 android:id="@+id/wallet_options_restore_wallet"
                 android:showAsAction="never"
-                android:title="@string/import_keys_dialog_title"/>
+                android:title="@string/import_keys_dialog_title" />
             <item
                 android:id="@+id/wallet_options_encrypt_keys"
                 android:showAsAction="never"
-                android:title="@string/encrypt_keys_dialog_title"
-                android:visible="false"/>
+                android:title="@string/encrypt_keys_dialog_title" />
         </menu>
     </item>
     <item
         android:id="@+id/wallet_options_exchange_rates"
+        android:checkable="false"
+        android:enabled="false"
         android:showAsAction="never"
-        android:title="@string/exchange_rates_activity_title"/>
+        android:title="@string/exchange_rates_activity_title"
+        android:visible="false" />
     <item
         android:id="@+id/wallet_options_sweep_wallet"
+        android:checkable="true"
+        android:enabled="false"
         android:showAsAction="never"
-        android:title="@string/sweep_wallet_activity_title"/>
+        android:title="@string/sweep_wallet_activity_title"
+        android:visible="false" />
     <item
         android:id="@+id/wallet_options_network_monitor"
         android:showAsAction="never"
@@ -71,12 +80,18 @@
         android:title="@string/preferences_activity_title"/>
     <item
         android:id="@+id/wallet_options_report_issue"
+        android:checkable="false"
+        android:enabled="false"
         android:showAsAction="never"
-        android:title="@string/preferences_report_issue_title"/>
+        android:title="@string/preferences_report_issue_title"
+        android:visible="false" />
     <item
         android:id="@+id/wallet_options_help"
+        android:checkable="false"
+        android:enabled="false"
         android:orderInCategory="999"
         android:showAsAction="never"
-        android:title="@string/button_help"/>
+        android:title="@string/button_help"
+        android:visible="false" />
 
 </menu>

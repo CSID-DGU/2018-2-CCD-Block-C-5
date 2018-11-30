@@ -87,21 +87,23 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right|top"
                 android:layout_marginLeft="8dp"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:visibility="visible">
 
                 <de.schildbach.wallet.ui.CurrencyTextView
                     android:id="@+id/transaction_row_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right" />
+                    android:layout_gravity="right"
+                    android:visibility="gone" />
 
                 <de.schildbach.wallet.ui.CurrencyTextView
                     android:id="@+id/transaction_row_fiat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
-                    android:textColor="@color/fg_insignificant"
-                    android:visibility="gone" />
+                    android:textColor="@color/yiseul_white"
+                    android:visibility="visible" />
             </LinearLayout>
         </LinearLayout>
 
@@ -122,15 +124,18 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/transaction_row_fee"
-                android:textColor="@color/fg_insignificant" />
-
+                android:textColor="@color/fg_insignificant"
+                android:visibility="visible" />
+           <!--네트워크비용 text -->
             <de.schildbach.wallet.ui.CurrencyTextView
                 android:id="@+id/transaction_row_fee"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right|top"
                 android:layout_marginLeft="8dp"
-                android:textColor="@color/fg_insignificant" />
+                android:textColor="@color/fg_insignificant"
+                android:visibility="visible" />
+            <!--네트워크 비용 숫자-->
         </LinearLayout>
 
         <LinearLayout
@@ -153,7 +158,8 @@
                 android:layout_weight="1"
                 android:singleLine="true"
                 android:textColor="@color/fg_error"
-                android:textSize="@dimen/font_size_small" />
+                android:textSize="@dimen/font_size_small"
+                android:visibility="gone" />
         </LinearLayout>
     </LinearLayout>
 

@@ -4,27 +4,28 @@
     android:layout_height="wrap_content"
     android:background="@color/bg_list"
     android:focusable="true"
-    android:foreground="?android:attr/selectableItemBackground" >
+    android:foreground="?android:attr/selectableItemBackground"
+    android:visibility="invisible">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingBottom="@dimen/list_entry_padding_vertical"
         android:paddingLeft="@dimen/list_entry_padding_horizontal"
+        android:paddingTop="@dimen/list_entry_padding_vertical"
         android:paddingRight="@dimen/list_entry_padding_horizontal"
-        android:paddingTop="@dimen/list_entry_padding_vertical" >
+        android:paddingBottom="@dimen/list_entry_padding_vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:baselineAligned="true"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0" >
+                android:layout_weight="0">
 
                 <TextView
                     android:id="@+id/exchange_rate_row_currency_code"
@@ -67,7 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:baselineAligned="true"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/exchange_rate_row_default"
@@ -87,7 +88,8 @@
                 android:layout_weight="1"
                 android:singleLine="true"
                 android:text="@string/exchange_rates_fragment_balance"
-                android:textColor="@color/fg_less_significant" />
+                android:textColor="@color/fg_less_significant"
+                android:visibility="invisible" />
 
             <de.schildbach.wallet.ui.CurrencyTextView
                 android:id="@+id/exchange_rate_row_balance"

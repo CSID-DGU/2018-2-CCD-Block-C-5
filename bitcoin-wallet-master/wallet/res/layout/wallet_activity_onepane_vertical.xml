@@ -20,6 +20,18 @@
             android:tag="levitate">
 
             <fragment
+                android:id="@+id/wallet_address_fragment"
+                android:name="de.schildbach.wallet.ui.WalletAddressFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/list_entry_padding_horizontal"
+                android:layout_marginTop="@dimen/list_entry_padding_vertical_lax"
+                android:layout_marginRight="@dimen/list_entry_padding_horizontal"
+                android:layout_marginBottom="@dimen/list_entry_padding_vertical_lax"
+                android:tag="slide_in_right" />
+
+            <fragment
                 android:id="@+id/wallet_balance_fragment"
                 android:name="de.schildbach.wallet.ui.WalletBalanceFragment"
                 android:layout_width="wrap_content"
@@ -28,17 +40,6 @@
                 android:layout_weight="1"
                 android:tag="slide_in_left" />
 
-            <fragment
-                android:id="@+id/wallet_address_fragment"
-                android:name="de.schildbach.wallet.ui.WalletAddressFragment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/list_entry_padding_horizontal"
-                android:layout_marginTop="@dimen/list_entry_padding_vertical_lax"
-                android:layout_marginRight="@dimen/list_entry_padding_horizontal"
-                android:layout_marginBottom="@dimen/list_entry_padding_vertical_lax"
-                android:layout_gravity="center"
-                android:tag="slide_in_right" />
         </LinearLayout>
 
         <fragment

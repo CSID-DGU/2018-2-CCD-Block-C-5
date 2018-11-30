@@ -119,7 +119,8 @@
                     android:id="@+id/send_coins_amount_local"
                     android:layout_width="0px"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" >
+                    android:layout_weight="1"
+                    android:visibility="invisible">
 
                     <EditText
                         android:id="@+id/send_coins_amount_local_edittext"
@@ -127,6 +128,7 @@
                         android:layout_height="wrap_content"
                         android:imeOptions="flagNoExtractUi"
                         android:textSize="@dimen/font_size_large"
+                        android:visibility="invisible"
                         tools:ignore="TextFields" />
                 </de.schildbach.wallet.ui.CurrencyAmountView>
             </LinearLayout>
@@ -137,7 +139,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/send_coins_fragment_direct_payment_enable" />
+            android:text="@string/send_coins_fragment_direct_payment_enable"
+            android:visibility="invisible" />
 
         <Space
             android:layout_width="0px"

@@ -23,7 +23,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:paddingRight="8dp"
-            android:textSize="@dimen/font_size_small" />
+            android:textSize="@dimen/font_size_small"
+            android:visibility="invisible" />
 
         <TextView
             android:id="@+id/wallet_balance_warning"

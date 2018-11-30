@@ -3,6 +3,7 @@
 
     <item
         android:id="@+id/exchange_rates_context_set_as_default"
-        android:title="@string/button_set_as_default"/>
+        android:title="@string/button_set_as_default"
+        android:visible="false" />
 
 </menu>
