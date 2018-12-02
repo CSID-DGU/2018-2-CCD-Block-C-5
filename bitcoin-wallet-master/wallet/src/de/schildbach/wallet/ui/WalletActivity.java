@@ -345,7 +345,7 @@ public final class WalletActivity extends AbstractWalletActivity {
 
         menu.findItem(R.id.wallet_options_exchange_rates)
                 .setVisible(Constants.ENABLE_EXCHANGE_RATES && res.getBoolean(R.bool.show_exchange_rates_option));
-        menu.findItem(R.id.wallet_options_sweep_wallet).setVisible(Constants.ENABLE_SWEEP_WALLET);
+        //menu.findItem(R.id.wallet_options_sweep_wallet).setVisible(Constants.ENABLE_SWEEP_WALLET);
         menu.findItem(R.id.wallet_options_restore_wallet)
                 .setEnabled(Environment.MEDIA_MOUNTED.equals(externalStorageState)
                         || Environment.MEDIA_MOUNTED_READ_ONLY.equals(externalStorageState));
@@ -385,9 +385,9 @@ public final class WalletActivity extends AbstractWalletActivity {
             startActivity(new Intent(this, ExchangeRatesActivity.class));
             return true;
 
-        case R.id.wallet_options_sweep_wallet:
-            SweepWalletActivity.start(this);
-            return true;
+       // case R.id.wallet_options_sweep_wallet:
+           // SweepWalletActivity.start(this);
+           // return true;
 
         case R.id.wallet_options_network_monitor:
             startActivity(new Intent(this, NetworkMonitorActivity.class));

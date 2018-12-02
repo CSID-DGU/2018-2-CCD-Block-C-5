@@ -23,9 +23,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:paddingRight="8dp"
-            android:textSize="0sp"
-            android:textColor="#ffffff"
-            />
+            android:textColor="@color/yiseul_white"
+            android:textSize="0pt" />
 
         <TextView
             android:id="@+id/wallet_balance_warning"
@@ -47,7 +46,20 @@
         android:layout_marginLeft="@dimen/list_entry_padding_horizontal_lax"
         android:layout_marginRight="@dimen/list_entry_padding_horizontal_lax"
         android:textColor="@color/fg_less_significant"
-        android:textSize="@dimen/font_size_small"
+        android:textSize="50sp"
         android:visibility="gone" />
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상품권 잔액"
+
+        android:textColor="@color/yiseul_black"
+        android:textSize="@dimen/font_size_normal"
+        />
+
 
 </FrameLayout>

@@ -116,4 +116,5 @@ public class SendingAddressesViewModel extends AndroidViewModel {
             clipboardManager.setPrimaryClip(clipData);
         }
     }
+
 }

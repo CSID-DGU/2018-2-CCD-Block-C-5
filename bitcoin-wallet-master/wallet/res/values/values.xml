@@ -7,6 +7,14 @@
     <string name="app_name">Bitcoin Wallet [Block C]</string>
     <string name="app_name_short">Block C wallet</string>
 
+    <string-array name="spinnerArray">
+        <item>금액을 선택하세요</item>
+        <item>1000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>50000</item>
+    </string-array>
+
     <string-array name="preferences_precision_values">
         <item>8</item>
         <item>6</item>
@@ -31,5 +39,8 @@
         <item>blocktrail.com</item>
         <item>live.blockcypher.com</item>
     </string-array>
+
+
+
 
 </resources>

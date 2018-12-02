@@ -17,9 +17,15 @@
 
 package de.schildbach.wallet.ui.send;
 
-import javax.annotation.Nullable;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import org.bitcoinj.core.Coin;
+
+import javax.annotation.Nullable;
 
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.R;
@@ -28,11 +34,6 @@ import de.schildbach.wallet.service.BlockchainService;
 import de.schildbach.wallet.ui.AbstractWalletActivity;
 import de.schildbach.wallet.ui.HelpDialogFragment;
 
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 
 /**
  * @author Andreas Schildbach
@@ -40,6 +41,8 @@ import android.view.MenuItem;
 public final class SendCoinsActivity extends AbstractWalletActivity {
     public static final String INTENT_EXTRA_PAYMENT_INTENT = "payment_intent";
     public static final String INTENT_EXTRA_FEE_CATEGORY = "fee_category";
+
+
 
     public static void start(final Context context, final PaymentIntent paymentIntent,
             final @Nullable FeeCategory feeCategory, final int intentFlags) {
@@ -60,6 +63,7 @@ public final class SendCoinsActivity extends AbstractWalletActivity {
             final int intentFlags) {
         start(context, PaymentIntent.from(Constants.DONATION_ADDRESS,
                 context.getString(R.string.wallet_donate_address_label), amount), feeCategory, intentFlags);
+
     }
 
     @Override

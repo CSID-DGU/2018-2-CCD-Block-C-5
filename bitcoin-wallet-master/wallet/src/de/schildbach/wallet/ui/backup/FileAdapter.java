@@ -61,4 +61,5 @@ public abstract class FileAdapter extends ArrayAdapter<File> {
 
         return row;
     }
+
 }
