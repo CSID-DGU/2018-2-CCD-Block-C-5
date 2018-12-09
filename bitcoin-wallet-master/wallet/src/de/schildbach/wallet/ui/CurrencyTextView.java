@@ -17,15 +17,6 @@
 
 package de.schildbach.wallet.ui;
 
-import javax.annotation.Nullable;
-
-import org.bitcoinj.core.Monetary;
-import org.bitcoinj.utils.MonetaryFormat;
-
-import de.schildbach.wallet.Constants;
-import de.schildbach.wallet.R;
-import de.schildbach.wallet.util.MonetarySpannable;
-
 import android.content.Context;
 import android.graphics.Paint;
 import android.text.style.ForegroundColorSpan;
@@ -33,6 +24,15 @@ import android.text.style.RelativeSizeSpan;
 import android.text.style.ScaleXSpan;
 import android.util.AttributeSet;
 import android.widget.TextView;
+
+import org.bitcoinj.core.Monetary;
+import org.bitcoinj.utils.MonetaryFormat;
+
+import javax.annotation.Nullable;
+
+import de.schildbach.wallet.Constants;
+import de.schildbach.wallet.R;
+import de.schildbach.wallet.util.MonetarySpannable;
 
 /**
  * @author Andreas Schildbach
@@ -55,6 +55,7 @@ public final class CurrencyTextView extends TextView {
     }
 
     public void setAmount(final Monetary amount) {
+       int num = 100;
         this.amount = amount;
         updateView();
     }

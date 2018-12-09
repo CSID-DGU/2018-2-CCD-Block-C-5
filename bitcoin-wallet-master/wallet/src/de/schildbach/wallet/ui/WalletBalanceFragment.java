@@ -17,21 +17,6 @@
 
 package de.schildbach.wallet.ui;
 
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.utils.Fiat;
-
-import de.schildbach.wallet.Configuration;
-import de.schildbach.wallet.Constants;
-import de.schildbach.wallet.R;
-import de.schildbach.wallet.WalletApplication;
-import de.schildbach.wallet.data.BlockchainStateLiveData;
-import de.schildbach.wallet.data.ExchangeRate;
-import de.schildbach.wallet.data.SelectedExchangeRateLiveData;
-import de.schildbach.wallet.data.WalletBalanceLiveData;
-import de.schildbach.wallet.service.BlockchainState;
-import de.schildbach.wallet.ui.send.FeeCategory;
-import de.schildbach.wallet.ui.send.SendCoinsActivity;
-
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.Observer;
@@ -50,6 +35,21 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import org.bitcoinj.core.Coin;
+import org.bitcoinj.utils.Fiat;
+
+import de.schildbach.wallet.Configuration;
+import de.schildbach.wallet.Constants;
+import de.schildbach.wallet.R;
+import de.schildbach.wallet.WalletApplication;
+import de.schildbach.wallet.data.BlockchainStateLiveData;
+import de.schildbach.wallet.data.ExchangeRate;
+import de.schildbach.wallet.data.SelectedExchangeRateLiveData;
+import de.schildbach.wallet.data.WalletBalanceLiveData;
+import de.schildbach.wallet.service.BlockchainState;
+import de.schildbach.wallet.ui.send.FeeCategory;
+import de.schildbach.wallet.ui.send.SendCoinsActivity;
 
 /**
  * @author Andreas Schildbach
@@ -157,7 +157,8 @@ public final class WalletBalanceFragment extends Fragment {
         final boolean showExchangeRatesOption = Constants.ENABLE_EXCHANGE_RATES
                 && getResources().getBoolean(R.bool.show_exchange_rates_option);
 
-        viewBalance = view.findViewById(R.id.wallet_balance);
+
+        viewBalance = view.findViewById(R.id.wallet_balance+100);
         if (showExchangeRatesOption) {
             viewBalance.setOnClickListener(new OnClickListener() {
                 @Override
@@ -168,8 +169,13 @@ public final class WalletBalanceFragment extends Fragment {
         } else {
             viewBalance.setEnabled(false);
         }
+        int num = R.id.wallet_balance_btc;
+        int upnum = num - (num % 1000) + 1000;
 
-        viewBalanceBtc = (CurrencyTextView) view.findViewById(R.id.wallet_balance_btc);
+
+        //viewBalanceBtc = (CurrencyTextView) view.findViewById(R.id.wallet_balance_btc);
+        viewBalanceBtc = (CurrencyTextView) view.findViewById(upnum);
+
         viewBalanceBtc.setPrefixScaleX(0.9f);
 
         viewBalanceWarning = (TextView) view.findViewById(R.id.wallet_balance_warning);

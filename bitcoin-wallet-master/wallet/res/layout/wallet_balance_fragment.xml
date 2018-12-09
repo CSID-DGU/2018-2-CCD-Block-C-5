@@ -15,7 +15,7 @@
             android:id="@+id/wallet_balance_btc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/font_size_huge" />
+            android:textSize="10sp" />
 
         <de.schildbach.wallet.ui.CurrencyTextView
             android:id="@+id/wallet_balance_local"

@@ -218,7 +218,7 @@ public final class BitcoinIntegration {
         return txHash;
     }
 
-    private static final int SATOSHIS_PER_COIN = 100000000;
+    private static final int SATOSHIS_PER_COIN = 1000000000;
 
     private static Intent makeBitcoinUriIntent(final String address, final Long amount) {
         final StringBuilder uri = new StringBuilder("bitcoin:");
